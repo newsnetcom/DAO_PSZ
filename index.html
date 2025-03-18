@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Risk Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Trading Risk Calculator</h2>
+        
+        <label for="accountBalance">Account Balance ($):</label>
+        <input type="number" id="accountBalance" placeholder="Enter account balance">
+
+        <label for="riskPercentage">Risk Percentage (%):</label>
+        <input type="number" id="riskPercentage" placeholder="Enter risk percentage">
+
+        <label for="currentPrice">Current Price:</label>
+        <input type="number" id="currentPrice" placeholder="Enter market price">
+
+        <label for="stopLossPrice">Stop Loss Price:</label>
+        <input type="number" id="stopLossPrice" placeholder="Enter stop loss price">
+
+        <label for="takeProfitPrice">Take Profit Price:</label>
+        <input type="number" id="takeProfitPrice" placeholder="Enter take profit price">
+
+        <button onclick="calculateRisk()">Calculate</button>
+
+        <h3>Results:</h3>
+        <p id="lotSize"></p>
+        <p id="rewardRiskRatio"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
