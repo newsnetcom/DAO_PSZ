@@ -13,7 +13,7 @@ function calculateRisk() {
     }
 
     // Calculate risk per trade in dollars
-    let riskAmount = (riskPercentage / 100) * accountBalance;
+    let riskAmount = (riskPercentage / 1) * accountBalance;
 
     // Calculate stop loss in pips
     let stopLoss = Math.abs(currentPrice - stopLossPrice);
